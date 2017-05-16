@@ -1,0 +1,59 @@
+header
+  position: fixed
+  z-index: 100
+  background-color: #1e2120
+  width: 100%
+  nav
+    ul
+      background-color: #1e2120
+      list-style: none
+      display: flex
+      justify-content: space-between
+      li
+        color: #fefefe
+        a
+          color: #fefefe
+
+
+.logo
+    width: 45px
+    height: 45px
+    p
+      font-family: 'Raleway', sans-serif
+      font-size: 20px
+      color: white
+
+.nav
+  float: right
+
+nav
+  ul
+    margin: 25px
+    padding: 0
+    list-style: none
+    position: relative
+  li
+    float: left
+
+  #login-trigger
+    border-radius: 3px 0 0 3px
+    &:hover
+      background: #fff
+  #login .active, #signup a:hover
+    background: #fff
+  #login-content
+    display: none
+    position: absolute
+    top: 24px
+    z-index: 999
+    background: #1e2120
+
+    padding: 15px
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.9)
+    border-radius: 3px 0 3px 3px
+  li #login-content
+    width: 250px
+
+
+
+

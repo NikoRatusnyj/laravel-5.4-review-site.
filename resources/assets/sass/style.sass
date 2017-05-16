@@ -1,0 +1,467 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap"
+@import "footer"
+@import "header"
+@import "typography"
+@import "variables"
+
+body
+  margin: 0
+  padding: 0
+
+.header-image
+  width: 100%
+  min-width: 300px
+  height: 450px
+  display: flex
+  align-items: center
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+
+.header-inner
+    display: flex
+    align-items: center
+    justify-content: center
+    h2
+      color: #fff
+
+section
+  background-color: darkgrey
+  height: 500px
+  &.content
+    padding: 45px 0
+.content
+  width: 100%
+  height: 500px
+  min-width: 300px
+  display: flex
+  align-items: center
+  flex-flow: row wrap
+  margin: -80px 0px 25px 0px
+
+.button
+  padding: 5px 12px
+  background-color: green
+
+
+  h1
+    font-family: "Brush Script MT", cursive
+    font-size: 25px
+    justify-content: center
+
+.card
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  position: relative
+  height: 250px
+  padding: 15px
+  display: flex
+  justify-content: center
+  .hover11
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    -webkit-transition: .3s ease-in-out
+    transition: .3s ease-in-out
+    .button
+      display: none
+.card
+  &:hover
+    .hover11
+      background-color: rgba(255, 255, 0, 0.28)
+      .button
+        display: block
+        margin-bottom: 15px
+
+
+div.stars
+  width: 270px
+  display: inline-block
+
+input.star
+  display: none
+
+label.star
+  float: right
+  padding: 10px
+  font-size: 36px
+  color: #444
+  transition: all .2s
+
+input
+  &.star:checked ~ label.star:before
+    content: '\f005'
+    color: #FD4
+    transition: all .25s
+  &.star-5:checked ~ label.star:before
+    color: #FE7
+    text-shadow: 0 0 20px #952
+  &.star-1:checked ~ label.star:before
+    color: #F62
+
+label.star
+  &:hover
+    transform: rotate(-15deg) scale(1.3)
+  &:before
+    content: '\f006'
+    font-family: FontAwesome
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic)
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-font-smoothing: antialiased
+  -o-font-smoothing: antialiased
+  font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+
+
+
+
+
+#contact
+  input
+    &[type="text"], &[type="email"], &[type="tel"], &[type="url"]
+      font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif
+  textarea, button[type="submit"]
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif
+  background: #F9F9F9
+  padding: 25px
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+  h3
+    display: block
+    font-size: 30px
+    font-weight: 300
+    margin-bottom: 10px
+  h4
+    margin: 5px 0 15px
+    display: block
+    font-size: 13px
+    font-weight: 400
+
+fieldset
+  border: medium none !important
+  margin: 0 0 10px
+  min-width: 100%
+  padding: 0
+  width: 100%
+
+#contact
+  input
+    &[type="text"], &[type="email"], &[type="tel"], &[type="url"]
+      width: 100%
+      border: 1px solid #ccc
+      background: #FFF
+      margin: 0 0 5px
+      padding: 10px
+  textarea
+    width: 100%
+    border: 1px solid #ccc
+    background: #FFF
+    margin: 0 0 5px
+    padding: 10px
+  input
+    &[type="text"]:hover, &[type="email"]:hover, &[type="tel"]:hover, &[type="url"]:hover
+      -webkit-transition: border-color 0.3s ease-in-out
+      -moz-transition: border-color 0.3s ease-in-out
+      transition: border-color 0.3s ease-in-out
+      border: 1px solid #aaa
+  textarea
+    &:hover
+      -webkit-transition: border-color 0.3s ease-in-out
+      -moz-transition: border-color 0.3s ease-in-out
+      transition: border-color 0.3s ease-in-out
+      border: 1px solid #aaa
+    height: 100px
+    max-width: 100%
+    resize: none
+  button[type="submit"]
+    cursor: pointer
+    width: 100%
+    border: none
+    background: #4CAF50
+    color: #FFF
+    margin: 0 0 5px
+    padding: 10px
+    font-size: 15px
+    &:hover
+      background: #43A047
+      -webkit-transition: background 0.3s ease-in-out
+      -moz-transition: background 0.3s ease-in-out
+      transition: background-color 0.3s ease-in-out
+    &:active
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+
+.copyright
+  text-align: center
+
+#contact
+  input:focus, textarea:focus
+    outline: 0
+    border: 1px solid #aaa
+
+\::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder
+  color: #888
+
+.row
+  margin-top: 50px
+
+/* Style the tab
+.tablinks
+  &.current
+    background: #ddd
+.current
+  display: block!important
+div.tab
+  overflow: hidden
+  border: 1px solid #ccc
+  background-color: #f1f1f1
+  button
+    background-color: inherit
+    float: left
+    border: none
+    outline: none
+    cursor: pointer
+    padding: 14px 16px
+    transition: 0.3s
+    &:hover
+      background-color: #ddd
+    &.active
+      background-color: #ccc
+
+
+.tabcontent
+  display: none
+  padding: 6px 12px
+  border: 1px solid #ccc
+  border-top: none
+
+  margin: 0
+  padding: 0
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+a
+  color: #03658c
+  text-decoration: none
+
+ul
+  list-style-type: none
+
+body
+  font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana
+  background: #dee1e3
+
+
+
+.comments-container
+  margin: 60px auto 15px
+  width: 768px
+  h1
+    font-size: 36px
+    color: #283035
+    font-weight: 400
+    a
+      font-size: 18px
+      font-weight: 700
+
+.comments-list
+  margin-top: 30px
+  position: relative
+  &:before
+    content: ''
+    width: 2px
+    height: 100%
+    background: #c7cacb
+    position: absolute
+    left: 32px
+    top: 0
+  &:after
+    content: ''
+    position: absolute
+    background: #c7cacb
+    bottom: 0
+    left: 27px
+    width: 7px
+    height: 7px
+    border: 3px solid #dee1e3
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+
+/**
+ *  Lineas / Detalles
+ *-----------------------
+
+.reply-list
+  &:before, &:after
+    display: none
+  li:before
+    content: ''
+    width: 60px
+    height: 2px
+    background: #c7cacb
+    position: absolute
+    top: 25px
+    left: -55px
+
+.comments-list li
+  margin-bottom: 15px
+  display: block
+  position: relative
+  &:after
+    content: ''
+    display: block
+    clear: both
+    height: 0
+    width: 0
+
+.reply-list
+  padding-left: 88px
+  clear: both
+  margin-top: 15px
+
+/**
+ *  Avatar
+ *---------------------------
+
+.comments-list .comment-avatar
+  width: 65px
+  height: 65px
+  position: relative
+  z-index: 99
+  float: left
+  border: 3px solid #FFF
+  -webkit-border-radius: 4px
+  -moz-border-radius: 4px
+  border-radius: 4px
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+
+.reply-list .comment-avatar
+  width: 50px
+  height: 50px
+
+.comment-main-level:after
+  content: ''
+  width: 0
+  height: 0
+  display: block
+  clear: both
+
+/**
+ *  Caja del Comentario
+ *---------------------------
+
+.comments-list .comment-box
+  width: 680px
+  float: right
+  position: relative
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15)
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15)
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15)
+  &:before, &:after
+    content: ''
+    height: 0
+    width: 0
+    position: absolute
+    display: block
+    border-width: 10px 12px 10px 0
+    border-style: solid
+    border-color: transparent #FCFCFC
+    top: 8px
+    left: -11px
+  &:before
+    border-width: 11px 13px 11px 0
+    border-color: transparent rgba(0, 0, 0, 0.05)
+    left: -12px
+
+.reply-list .comment-box
+  width: 610px
+
+.comment-box
+  .comment-head
+    background: #FCFCFC
+    padding: 10px 12px
+    border-bottom: 1px solid #E5E5E5
+    overflow: hidden
+    -webkit-border-radius: 4px 4px 0 0
+    -moz-border-radius: 4px 4px 0 0
+    border-radius: 4px 4px 0 0
+    i
+      float: right
+      margin-left: 14px
+      position: relative
+      top: 2px
+      color: #A6A6A6
+      cursor: pointer
+      -webkit-transition: color 0.3s ease
+      -o-transition: color 0.3s ease
+      transition: color 0.3s ease
+      &:hover
+        color: #03658c
+  .comment-name
+    color: #283035
+    font-size: 14px
+    font-weight: 700
+    float: left
+    margin-right: 10px
+    a
+      color: #283035
+  .comment-head span
+    float: left
+    color: #999
+    font-size: 13px
+    position: relative
+    top: 1px
+  .comment-content
+    background: #FFF
+    padding: 12px
+    font-size: 15px
+    color: #595959
+    -webkit-border-radius: 0 0 4px 4px
+    -moz-border-radius: 0 0 4px 4px
+    border-radius: 0 0 4px 4px
+  .comment-name.by-author
+    color: #03658c
+    a
+      color: #03658c
+    &:after
+      content: 'autor'
+      background: #03658c
+      color: #FFF
+      font-size: 12px
+      padding: 3px 5px
+      font-weight: 700
+      margin-left: 10px
+      -webkit-border-radius: 3px
+      -moz-border-radius: 3px
+      border-radius: 3px
+
+/** =====================
+ *  Responsive
+ *========================
+@media only screen and (max-width: 766px)
+  .comments-container
+    width: 480px
+  .comments-list .comment-box
+    width: 390px
+  .reply-list .comment-box
+    width: 320px
